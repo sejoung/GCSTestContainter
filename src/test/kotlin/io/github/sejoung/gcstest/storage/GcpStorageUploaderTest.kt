@@ -3,7 +3,7 @@ package io.github.sejoung.gcstest.storage
 import com.google.cloud.storage.Storage
 import io.github.sejoung.gcstest.config.CredentialsProviderConfig
 import io.github.sejoung.gcstest.config.GcpProperties
-import io.github.sejoung.gcstest.config.TestGcsContainterConfiguration
+import io.github.sejoung.gcstest.config.TestGcsContainerConfiguration
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Import
 import org.springframework.test.context.ContextConfiguration
 
 @SpringBootTest
-@ContextConfiguration(initializers = [TestGcsContainterConfiguration::class])
+@ContextConfiguration(initializers = [TestGcsContainerConfiguration::class])
 @Import(CredentialsProviderConfig::class)
 class GcpStorageUploaderTest {
     @Autowired

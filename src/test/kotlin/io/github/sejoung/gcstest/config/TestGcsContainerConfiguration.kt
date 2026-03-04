@@ -8,7 +8,7 @@ import org.springframework.context.ApplicationContextInitializer
 import org.springframework.context.ConfigurableApplicationContext
 import org.testcontainers.containers.GenericContainer
 
-class TestGcsContainterConfiguration :
+class TestGcsContainerConfiguration :
     ApplicationContextInitializer<ConfigurableApplicationContext> {
 
     companion object {
